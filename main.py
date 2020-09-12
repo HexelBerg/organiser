@@ -19,7 +19,7 @@ class ExampleApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
         directory = QtWidgets.QFileDialog.getExistingDirectory(self, "Выберите папку")
         # открыть диалог выбора директории и установить значение переменной
         # равной пути к выбранной директории
-
+        # Тест коммит
         if directory:  # не продолжать выполнение, если пользователь не выбрал директорию
             for file_name in os.listdir(directory):  # для каждого файла в директории
                 self.listWidget.addItem(file_name)   # добавить файл в listWidget
